@@ -1,0 +1,459 @@
+body{ /*colore del font e style della pagina*/
+    margin:0px;
+    color: rgb(26,50,96);
+    font-style: normal;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #fafafa;
+    opacity: 20;
+}
+
+@media(max-width:800px) /*per adattamento mobile */
+{
+    body{
+        font-size: 13px;
+    }
+}
+
+header
+{
+    height: 100px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+/*per realizzare l'overlay*/
+/*
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+}
+*/
+
+
+
+
+.style{
+
+    text-transform: uppercase;
+    background-color: white;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+
+}
+
+
+nav{
+    display: flex;
+    justify-content:  space-around;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+
+
+a{ /*per manina*/
+    cursor: pointer;
+}
+
+
+
+nav a:link{
+    color:rgb(26,50,96);
+    text-decoration: none;
+
+}
+
+nav a:visited{
+    color:rgb(26,50,96);
+    text-decoration: none;
+}
+
+nav a:hover{ /*per pseudoclasse*/
+
+    border-radius:10px;
+    color:rgb(26,50,96);
+}
+
+
+
+
+
+
+
+nav a{
+    margin: 10px;
+    color: rgb(26,50,96);
+}
+nav img {
+    width: 10%;
+    height: 100%;
+}
+
+
+@media(max-width:800px)
+{
+    nav{
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+    nav a{
+        margin: 4px;
+
+    }
+
+    .style{
+        font-size: 13px;
+    }
+}
+@media(max-width: 300px) {
+    .style{
+        font-size: 10px;
+    }
+}
+
+
+@media(max-width: 800px) {
+    #XL{
+        display:none;
+    }
+}
+
+a.button {
+    border-radius: 100px;
+    z-index: 2;
+}
+
+
+
+
+#link-group a{
+    margin: 10px;
+
+}
+
+#menu {/*per menu a scomparsa*/
+    display: none;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0px;
+
+}
+
+@media (max-width: 900px) {
+    #link-group {
+        display: none;
+    }
+
+    #menu {
+        display:inline-block;
+        text-align: center;
+    }
+
+}
+
+section{/*margini della sezione*/
+    margin: 100px;
+}
+
+section h1{/*margini della sezione*/
+
+    color: rgb(26,50,96);
+}
+
+
+@media(max-width:900px){
+    section{
+        margin:0%;
+    }
+}
+
+
+
+footer/*per footer*/
+{
+
+
+    height:15vh;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+footer p{
+    display: inline-block;
+    margin: 0px;
+}
+
+footer em{
+    font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace';
+}
+
+
+.button1 {/*per bottoni nei contatti*/
+    background-image: url("facebook.png");
+    background-position: center;
+    display:inline-block;
+    background-size: cover;
+    border: none;
+    z-index: 10;
+    padding: 10px;
+    text-align: center;
+    margin-top:10px;
+
+}
+
+
+.button2 {
+    background-image: url("twitter.png");
+    background-position: center;
+    display:inline-block;
+    background-size: cover;
+    border: none;
+    z-index: 10;
+    padding: 10px;
+    text-align: center;
+    margin-top:10px;
+
+}
+
+.button3 {
+    background-image: url("ig.png");
+    background-position: center;
+    display:inline-block;
+    background-size: cover;
+    border: none;
+    z-index: 10;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+footer a:hover{/*sovrascrivo*/
+    background-color:  rgb(26,50,96);
+}
+
+
+#profile{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    text-align: left;
+    margin-bottom: 30px;
+}
+#profile p{
+    text-align:justify ;
+    color: rgb(26,50,96);
+}
+
+#profile img{
+    height: 80px;
+    width:80px
+}
+
+#profile.hidden{
+    display: none;
+}
+
+@media(max-width: 800px) {
+
+    #profile {
+        margin-top: 100px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #profile p{
+        text-align:center;
+    }
+}
+.X1234{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.X1234 div{
+
+    margin: 15px;
+    width:30%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.X1234 div img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.X1234 img:hover{
+    box-shadow: 5px 5px 5px 5px gray;
+}
+.X1234 div h3{
+
+
+    color:rgb(26,50,96);
+}
+
+.X1234 div p{
+
+    color:rgb(26,50,96);
+}
+
+.X1234 div p:hover{
+   cursor: pointer;
+}
+
+
+
+
+@media(max-width:800px)
+{
+    section h1
+    {
+        text-align: center;
+    }
+    section p{
+        text-align: center;
+    }
+    .X1234{
+
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size:13px;
+    }
+
+    .X1234 div
+    {
+        width:inherit;
+        flex-grow: 1;
+        padding:30px
+    }
+
+    .X1234 img {
+        height:50%;
+        width:50%;
+    }
+
+    }
+
+
+
+
+.hidden{
+    display: none;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+#modal-view{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.9);
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    left: 0;
+    top: 0;
+    text-align: center;
+    color:white ;
+    overflow: auto;
+}
+
+.details{
+    font-size: 20px
+}
+#modal-view.hidden{
+    display:none;
+}
+ #modal-view div{
+    width: 300px;
+    height: 300px;
+
+}
+#modal-view div img{/*servono per far stare l'immagine nella viewport*/
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+#modal-view  div p:hover{/*servono per far stare l'immagine nella viewport*/
+    cursor: pointer;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+#template{
+    display: flex;
+    flex-direction: column;
+}
+#top_album{
+    background-color: white;
+    margin: 0px;
+
+}
+
+#top_album div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ span:hover{
+     cursor: pointer;
+ }
+iframe{
+    margin:30px 10px 30px 10px;
+}
+
+#top_album h1{
+    text-align: center;
+}
+
+
+@media(max-width: 800px) {
+
+    main{
+        flex-direction: column;
+    }
+
+}

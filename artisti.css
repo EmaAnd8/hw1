@@ -1,0 +1,434 @@
+body{ /*colore del font e style della pagina*/
+    margin:0px;
+    font-style: normal;
+    font-family: 'Noto Sans', sans-serif;
+    background-color:#fafafa;
+    opacity:20;
+    color: rgb(26,50,96);
+}
+
+@media(max-width:800px) /*per adattamento mobile */
+{
+    body{
+        font-size: 13px;
+    }
+}
+
+header
+{
+    height: 100px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+.style{
+
+    text-transform: uppercase;
+    background-color: white;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+
+}
+
+
+nav{
+    display: flex;
+    justify-content:  space-around;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+
+
+a{ /*per manina*/
+    cursor: pointer;
+}
+
+
+
+nav a:link{
+    color:rgb(26,50,96);
+    text-decoration: none;
+
+}
+
+nav a:visited{
+    color:rgb(26,50,96);
+    text-decoration: none;
+}
+
+nav a:hover{ /*per pseudoclasse*/
+    background-color: white;
+    border-radius:10px;
+    color:rgb(26,50,96);
+}
+
+
+nav img {
+    width: 10%;
+    height: 100%;
+}
+
+
+
+
+
+
+nav a{
+    margin: 10px;
+    color: rgb(26,50,96);
+}
+
+@media(max-width:800px)
+{
+    nav{
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+    nav a{
+        margin: 4px;
+
+    }
+
+    .style{
+        font-size: 13px;
+    }
+}
+@media(max-width: 300px) {
+    .style{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 800px) {
+    #XL{
+        display:none;
+    }
+}
+
+section{/*margini della sezione*/
+    margin: 100px;
+}
+
+section h1{/*margini della sezione*/
+        color: rgb(26,50,96);
+
+}
+
+section p{
+    text-align: left;
+}
+
+@media(max-width:800px){
+    section{
+        margin:20px;
+    }
+}
+
+
+
+footer/*per footer*/
+{
+
+
+    height:15vh;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+footer p{
+    display: inline-block;
+    margin: 0px;
+}
+
+footer em{
+    font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace';
+}
+
+
+.button1 {/*per bottoni nei contatti*/
+    background-image: url("facebook.png");
+    background-position: center;
+    display:inline-block;
+    background-size: cover;
+    border: none;
+    z-index: 10;
+    padding: 10px;
+    text-align: center;
+    margin-top:10px;
+
+}
+
+
+.button2 {
+    background-image: url("twitter.png");
+    background-position: center;
+    display:inline-block;
+    background-size: cover;
+    border: none;
+    z-index: 10;
+    padding: 10px;
+    text-align: center;
+    margin-top:10px;
+
+}
+
+.button3 {
+    background-image: url("ig.png");
+    background-position: center;
+    display:inline-block;
+    background-size: cover;
+    border: none;
+    z-index: 10;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+footer a:hover{/*sovrascrivo*/
+    background-color:  rgb(26,50,96);
+}
+
+#contents
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contents.hidden{
+    display: none;
+}
+
+#contents div
+{
+    width: 100%;
+
+}
+#container1 .X1234{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+
+
+#container1 .X1234 div{
+    display: flex;
+    margin: 15px 5px 15px 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 15px;
+    width: 25%;
+    height: 18%;
+
+}
+
+.X1234 div img{
+    margin:10px auto 10px auto;
+    width: 100%;
+    height:35%;
+}
+
+.X1234 div h3{
+    text-align: center;
+    color: rgb(26,50,96);
+
+}
+.X1234 div p{
+    text-align: center;
+    color:rgb(26,50,96);
+
+}
+.X1234 div p:hover{
+    cursor:pointer;
+}
+
+
+
+
+@media(max-width: 800px) {
+    #container1 h1{
+        text-align: center;
+    }
+
+    #container1 .X1234{
+
+        flex-direction: column;
+    }
+
+   #container1 .X1234 div{
+        margin:10px;
+        width: 50%;
+        height: 50%;
+    }
+    .X1234 div img{
+
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+
+
+}
+
+#profile{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+#profile p{
+    text-align:justify ;
+    color: rgb(26,50,96);
+}
+#profile img{
+    height: 80px;
+    width:80px
+}
+
+#profile.hidden{
+    display: none;
+}
+@media(max-width: 800px) {
+
+    #profile {
+        margin-top: 100px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #profile p{
+        text-align:center;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+.no-scroll{
+    overflow: hidden;
+}
+
+#modal-view{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.9);
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    left: 0;
+    top: 0;
+    color:white ;
+    text-align: center;
+}
+
+.details{
+    font-size: 20px
+}
+#modal-view.hidden{
+    display:none;
+}
+
+#modal-view div img{/*servono per far stare l'immagine nella viewport*/
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#modal-view  div h3{/*servono per far stare l'immagine nella viewport*/
+    text-align: center;
+}
+
+#modal-view  div p { /*servono per far stare l'immagine nella viewport*/
+        text-align: justify;
+        line-height: 16px;
+        letter-spacing: 1px;
+
+}
+
+
+
+#modal-view  div span:hover{/*servono per far stare l'immagine nella viewport*/
+    cursor: pointer;
+}
+
+span:hover{
+    cursor:pointer;
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+#template{
+    display: flex;
+    flex-direction: column;
+}
+#top_artist{
+    background-color: white;
+    margin: 0px;
+
+}
+
+#top_artist div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+iframe{
+    margin:30px 10px 30px 10px;
+}
+
+#top_artist h1{
+    text-align: center;
+}
+.X1234 img:hover{
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+@media(max-width: 800px) {
+
+    main{
+        flex-direction: column;
+    }
+
+}
